@@ -1,0 +1,11 @@
+configuration:
+  runtime: "concord-v2"
+
+flows:
+  default:
+    - task: http
+      in:
+        url: https://googl.com
+      out: myResult
+
+    - log: ${myResult}
