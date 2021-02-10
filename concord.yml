@@ -11,7 +11,11 @@ flows:
   default:
     - task: http
       in:
-        url: https://googl.com
+        debug: true
+        url: ${item}
       out: myResult
+      parallelWithItems:
+        - https://google.com
+        - https://bing.com
 
     - log: ${myResult}
