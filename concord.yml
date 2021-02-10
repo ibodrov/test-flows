@@ -1,4 +1,7 @@
 configuration:
+  events:
+    recordTaskInVars: false
+    recordTaskOutVars: false
   runtime: "concord-v2"
 
 flows:
