@@ -1,7 +1,10 @@
 configuration:
+  debug: true
+  dependencies:
+    - mvn://com.walmartlabs.concord.plugins.basic:ansible-tasks:1.79.0
   events:
-    recordTaskInVars: false
-    recordTaskOutVars: false
+    recordTaskInVars: true
+    recordTaskOutVars: true
   runtime: "concord-v2"
 
 flows:
