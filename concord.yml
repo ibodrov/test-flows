@@ -9,7 +9,8 @@ configuration:
 
 flows:
   default:
-    - task: http
+    - name: Fetching ${item}...
+      task: http
       in:
         debug: true
         url: ${item}
